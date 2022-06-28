@@ -1,0 +1,11 @@
+name: Security scanner
+
+on: [push, pull_request]
+
+jobs:
+  security:
+    name: Test Security Checker
+    runs-on: ubuntu-latest
+    steps:
+      - name: check
+        run: echo "test running from parent repo"
